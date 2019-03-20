@@ -1,6 +1,6 @@
 {% set name = "py-pandoc" %}
 {% set version = "2.7.1" %}
-{% set dep_ver = "2.6" %}
+{% set dep_ver = "2.7.1" %}
 
 package:
   name: {{ name|lower }}
