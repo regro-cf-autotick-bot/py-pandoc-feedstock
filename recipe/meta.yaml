@@ -1,5 +1,5 @@
 {% set name = "py-pandoc" %}
-{% set version = "2.9.1.1" %}
+{% set version = "2.9.2" %}
 # {% set dep_ver = "2.8.1" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 36d16a4773105581b167d1614c2694e43e8cb5080c2b3310e9eafb3a83227ffc
+  sha256: 6eaee3981e911a03b6b200c9beb778f3fe727678bd95e0529288665f5fba0211
   patches:
     - conda.patch
 
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - python >=3.6
-    - pip
+    - pip >=20.0.2
   run:
     - python >=3.6
     - pandoc ={{ version }}
