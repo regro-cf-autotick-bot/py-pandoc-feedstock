@@ -1,6 +1,6 @@
 {% set name = "py-pandoc" %}
 {% set version = "2.9.2.0.1" %}
-# {% set dep_ver = "2.8.1" %}
+{% set dep_ver = "2.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +23,7 @@ requirements:
     - pip >=20.0.2
   run:
     - python >=3.6
-    - pandoc ={{ version }}
+    - pandoc ={{ dep_ver }}
 
 test:
   commands:
