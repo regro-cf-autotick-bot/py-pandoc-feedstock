@@ -1,5 +1,5 @@
 {% set name = "py-pandoc" %}
-{% set version = "2.9.2.0.1" %}
+{% set version = "2.9.2.1" %}
 {% set dep_ver = "2.9.2" %}
 
 package:
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fa02a688d25ad2b212ccdbf12c43ccca3f79ad40433466e20083a4fd2f4785bf
+  sha256: 805a8e36837b7c18c8c5cb01bf74ce5055ee2d90b6dd16259b2fda5522ec496a
   patches:
     - conda.patch
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -32,10 +32,10 @@ test:
 
 about:
   home: https://github.com/kiwi0fruit/py-pandoc
-  license: "GPLv2+"
+  license: GPLv2+
   license_family: GPL
   license_file: LICENSE
-  summary: "Installs pandoc conda package in pip and conda."
+  summary: Installs pandoc conda package in pip and conda.
   doc_url: https://github.com/kiwi0fruit/py-pandoc
   dev_url: https://github.com/kiwi0fruit/py-pandoc
 
