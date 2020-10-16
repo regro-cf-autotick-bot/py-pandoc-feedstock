@@ -5,11 +5,13 @@ Home: https://github.com/kiwi0fruit/py-pandoc
 
 Package license: GPLv2+
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py-pandoc-feedstock/blob/master/LICENSE.txt)
 
 Summary: Installs pandoc conda package in pip and conda.
 
+Development: https://github.com/kiwi0fruit/py-pandoc
 
+Documentation: https://github.com/kiwi0fruit/py-pandoc
 
 Current build status
 ====================
